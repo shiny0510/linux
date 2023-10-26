@@ -1,0 +1,10 @@
+echo '================6 Server===============' 
+sshpass -p '비밀번호' ssh 계정@아이피.16 -p 22 "echo '-------GPU--------' &&nvidia-smi -q -d memory|tail -13|head -5| xargs echo&& echo '------Memory-----' &&top -b -n1 | head -4 | tail -2"
+echo '================7 Server==============='
+sshpass -p '비밀번호' ssh 계정@아이피.17 -p 22 "echo '-------GPU--------' &&nvidia-smi -q -d memory|tail -13|head -5| xargs echo&& echo '------Memory-----' &&top -b -n1 | head -4 | tail -2"
+echo '================8 Server==============='
+sshpass -p '비밀번호' ssh 계정@아이피.18 -p 22 "echo '-------GPU--------' &&nvidia-smi -q -d memory|tail -13|head -5| xargs echo&& echo '------Memory-----' &&top -b -n1 | head -4 | tail -2"
+echo '================9 Server==============='
+sshpass -p '비밀번호' ssh 계정@아이피.19 -p 22 "echo '-------GPU--------' &&nvidia-smi -q -d memory|tail -13|head -5| xargs echo&& echo '------Memory-----' &&top -b -n1 | head -4 | tail -2"
+echo '================10 Server==============='
+sshpass -p '비밀번호' ssh 계정@아이피.20: -p 22 "echo '-------GPU--------' &&nvidia-smi -q -d memory|tail -13|head -5| xargs echo&& echo '------Memory-----' &&top -b -n1 | head -4 | tail -2"

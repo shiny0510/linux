@@ -1,0 +1,6 @@
+#!/bin/bash -l
+
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
+
+30,0 * * * * sh ~/monitoring.sh > ~/logdir/$(date +"\%Y\%m\%d.\%H.\%M").txt
